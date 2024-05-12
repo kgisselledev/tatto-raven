@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Tattoo Raven Bogotá</title>
+    <link rel="stylesheet" href="./styles.css">
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+</head>
+
+<body>
+
+    <div id="header-container" class="container-fluid" style="margin: center;">
+        <div class="row" id="header">
+            <div class="col">
+                <img src="./tatuaje-gif.gif" class="img-fluid fade-in-header" alt="Descripción de la imagen">
+                <img src="./img-3.jpg" class="img-fluid fade-in-header" alt="Descripción de la imagen">
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-md-8">
+                <div class="container fade-in-form">
+                    <h1>Tattoo Raven Bogotá - Agendar Cita</h1>
+                    <form id="appointmentForm">
+                        <div class="form-group">
+                            <label for="nombreCliente">Nombre:</label>
+                            <input type="text" class="form-control" id="nombreCliente" name="nombreCliente" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="correo">Correo Electrónico:</label>
+                            <input type="email" class="form-control" id="correo" name="correo" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="direccion">Dirección:</label>
+                            <input type="text" class="form-control" id="direccion" name="direccion" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="telefono">Teléfono:</label>
+                            <input type="text" class="form-control" id="telefono" name="telefono" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="tatuaje">Tatuaje:</label>
+                            <select class="form-control" id="tatuaje" name="tatuaje" required>
+                                <option value="tatuaje">Ilustrativo</option>
+                                <option value="blanco">Blanco y negro</option>
+                                <option value="otro">Otro</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="cantidad">Cantidad:</label>
+                            <select class="form-control" id="cantidad" name="cantidad" required>
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="fecha">Fecha de la Cita:</label>
+                            <input type="date" class="form-control" id="fecha" name="fecha" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="descripcion">Mensaje Adicional:</label>
+                            <textarea class="form-control" id="descripcion" name="descripcion" rows="3"></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Agendar Cita</button>
+                    </form>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <img src="./img-2.jpg" class="img-fluid fade-in-header" alt="Descripción de la imagen">
+            </div>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="./app.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+
+</html>
